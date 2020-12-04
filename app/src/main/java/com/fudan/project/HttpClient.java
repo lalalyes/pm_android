@@ -26,6 +26,7 @@ public class HttpClient {
     private static HttpClient mClient;
     private Context context;
     final private String baseUrl = "http://175.24.120.91:8001/";
+    //final private String baseUrl = "http://127.0.0.1:8001/";
     private HttpClient(Context c) {
         context = c;
         client = new OkHttpClient.Builder()

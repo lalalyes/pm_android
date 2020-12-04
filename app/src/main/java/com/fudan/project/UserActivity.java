@@ -14,6 +14,8 @@ import androidx.navigation.ui.NavigationUI;
 
 public class UserActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "com.example.pm.MESSAGE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

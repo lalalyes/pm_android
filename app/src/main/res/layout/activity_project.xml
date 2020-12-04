@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.project.ProjectActivity"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:background="@android:color/background_light"
+
+        android:orientation="vertical"
+
+        tools:context=".WashingRoomMonitor"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="358dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+
+                android:text="校园活动"
+
+                android:textColor="@android:color/primary_text_light"
+
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="2dp"
+
+            android:background="@color/colorPrimaryDark" />
+
+        <!--
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1.5"
+
+                android:gravity="center"
+
+                android:padding="5dp"
+
+                android:text="时区"
+
+                android:textColor="@color/design_default_color_on_secondary" />
+
+
+            <TextView
+
+                android:layout_width="1dp"
+
+                android:layout_height="match_parent"
+
+                android:background="@color/colorAccent" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:padding="5dp"
+
+                android:text="序号"
+
+                android:textColor="@color/design_default_color_on_secondary" />
+
+
+            <TextView
+
+                android:layout_width="1dp"
+
+                android:layout_height="match_parent"
+
+                android:background="@color/colorAccent" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:padding="5dp"
+
+                android:text="人员"
+
+                android:textColor="@color/design_default_color_on_secondary" />
+
+
+            <TextView
+
+                android:layout_width="1dp"
+
+                android:layout_height="match_parent"
+
+                android:background="@color/colorAccent" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:padding="5dp"
+
+                android:text="数量"
+
+                android:textColor="@color/design_default_color_on_secondary" />
+
+        </LinearLayout>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+
+            android:background="@color/colorAccent" />
+
+-->
+        <ScrollView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+
+                android:id="@+id/wr_areas"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

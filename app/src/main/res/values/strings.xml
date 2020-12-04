@@ -20,4 +20,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_user">我的</string>
+    <string name="done_project">已完成</string>
+    <string name="all_project">所有活动</string>
+    <string name="project_activity_title">活动界面</string>
 </resources>

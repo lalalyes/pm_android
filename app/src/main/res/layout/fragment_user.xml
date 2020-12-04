@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.user.UserFragment">
 
+
     <com.fudan.project.MyImageView
         android:id="@+id/avatar"
         android:layout_width="128dp"
@@ -43,6 +44,116 @@
         app:layout_constraintStart_toStartOf="@id/text_user"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.225" />
+
+
+
+    <LinearLayout
+        android:id="@+id/all_list"
+        android:layout_width="409dp"
+        android:layout_height="227dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:singleLine="true"
+        app:layout_constraintVertical_bias="0.45">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:background="@android:color/darker_gray"
+            android:singleLine="true"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+
+                    app:srcCompat="@mipmap/fudan" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/done_button"
+                style="@style/Widget.AppCompat.Button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="144dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/done_project" />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+
+            android:background="?attr/colorControlHighlight" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+
+                    app:srcCompat="@mipmap/fudan" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/all_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="144dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/all_project" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:background="@android:color/darker_gray"
+            android:singleLine="true"
+            android:textAlignment="center"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+
+            />
+    </LinearLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
