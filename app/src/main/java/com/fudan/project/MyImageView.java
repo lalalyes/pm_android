@@ -14,6 +14,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.widget.ImageView;
@@ -49,10 +50,14 @@ public class MyImageView extends AppCompatImageView {
                     setImageBitmap(bitmap);
                     break;
                 case NETWORK_ERROR:
+                    Looper.prepare();
                     Toast.makeText(getContext(),"网络连接失败",Toast.LENGTH_SHORT).show();
+                    Looper.loop();
                     break;
                 case SERVER_ERROR:
+                    Looper.prepare();
                     Toast.makeText(getContext(),"服务器发生错误",Toast.LENGTH_SHORT).show();
+                    Looper.loop();
                     break;
             }
         }

@@ -105,13 +105,28 @@ public class ProjectDetails extends AppCompatActivity {
 
                         //----------------------------------------------
                         //判定当前活动状态，报名截止前10分钟和活动开始前10分钟要弹窗表示
+                        //活动进行中和活动已结束也要弹窗展示
                         Date now = new Date();
                         if(now.getTime() < projectDetailsResponse.getActivityStartTime() && now.getTime() > projectDetailsResponse.getActivityStartTime()-600000){
+                            Looper.prepare();
                             Toast.makeText(getBaseContext(), "离活动开始还有不到10分钟", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
                         }
 
                         if(now.getTime() < projectDetailsResponse.getSignUpEndTime() && now.getTime() > projectDetailsResponse.getActivityEndTime()-600000){
+                            Looper.prepare();
                             Toast.makeText(getBaseContext(), "离报名结束还有不到10分钟", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        }
+                        if(now.getTime() > projectDetailsResponse.getActivityStartTime() && now.getTime() < projectDetailsResponse.getActivityEndTime()){
+                            Looper.prepare();
+                            Toast.makeText(getBaseContext(), "活动进行中", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        }
+                        if(now.getTime() > projectDetailsResponse.getActivityEndTime()){
+                            Looper.prepare();
+                            Toast.makeText(getBaseContext(), "活动已结束", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
                         }
 
 

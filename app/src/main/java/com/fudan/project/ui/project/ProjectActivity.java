@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.fudan.project.HttpClient;
 
+import com.fudan.project.MyImageView;
 import com.fudan.project.R;
 import com.fudan.project.UserActivity;
 
@@ -128,7 +129,7 @@ public class ProjectActivity extends AppCompatActivity {
 
             TextView ticket = llWashingRoomItem.findViewById(R.id.pj_capacity);
 
-            ImageView iv = llWashingRoomItem.findViewById(R.id.imageView);
+            MyImageView iv = llWashingRoomItem.findViewById(R.id.imageView);
 
             System.out.println("----------------------------------分界线------------------------------------");
 
@@ -139,6 +140,8 @@ public class ProjectActivity extends AppCompatActivity {
             //Integer类型需要转换用.toString()不然报错
             vhclNo.setText(pojo.get("introduction"));
             ticket.setText("类型：" +pojo.get("type"));
+            iv.setImageURL("http://175.24.120.91/images/"+pojo.get("picture"));
+
 
             System.out.println("time: "+time.getText());
             System.out.println("vhclNo: "+vhclNo.getText());
