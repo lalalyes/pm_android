@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.225" />
 
 
-
+<!--
     <LinearLayout
         android:id="@+id/all_list"
         android:layout_width="409dp"
@@ -152,7 +152,7 @@
             />
     </LinearLayout>
 
-
+<-->
 
 
 

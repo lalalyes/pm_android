@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mzlion:easy-okhttp:1.1.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mzlion/easy-okhttp/1.1.0/11fe4758cc84660444e03f325de119b0f42cc294/easy-okhttp-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mzlion/easy-okhttp/1.1.0/c138f9fb90abe68439d726563800abaa82aae51a/easy-okhttp-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mzlion/easy-okhttp/1.1.0/b5b554f0c38783e043955453af3a06a0c0021161/easy-okhttp-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

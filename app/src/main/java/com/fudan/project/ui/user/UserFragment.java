@@ -60,40 +60,14 @@ public class UserFragment extends Fragment {
 
         userViewModel.getAvatar(root, getActivity());
         final TextView textView = root.findViewById(R.id.text_user);
-//        MyImageView avatar = (MyImageView) root.findViewById(R.id.avatar);
-//        avatar.setImageURL("http://175.24.120.91/images/pay.png");
+        MyImageView avatar = (MyImageView) root.findViewById(R.id.avatar);
+        avatar.setImageURL("http://175.24.120.91/images/pay.png");
         userViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
-
-        //------------------------------------------------------------------------------------------
-        //点击已完成按钮，发送参数信息给project_xml页面，已完成和全部活动的页面复用，所以要传参数区别
-        Button doneButton = root.findViewById(R.id.done_button);
-        doneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(v.getContext(), ProjectActivity.class);
-                intent.putExtra(UserActivity.EXTRA_MESSAGE, "done");
-                startActivity(intent);
-            }
-        });
-
-        //点击所有活动按钮，发送参数信息给project_xml页面，已完成和全部活动的页面复用，所以要传参数区别
-        Button allButton = root.findViewById(R.id.all_button);
-        allButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(v.getContext(), ProjectActivity.class);
-                intent.putExtra(UserActivity.EXTRA_MESSAGE, "all");
-                startActivity(intent);
-            }
-        });
-
-        //------------------------------------------------------------------------------------------
-
 
 
         return root;

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mzlion:mzlion-core:1.1.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mzlion/mzlion-core/1.1.0/187144a8e47d8eca0dd40f55dca7f2d07a177f92/mzlion-core-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mzlion/mzlion-core/1.1.0/3550db2d7b2108c3a20081fb6eefa7fa596b013d/mzlion-core-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mzlion/mzlion-core/1.1.0/548c7f233ce345b113dfaea551ed080c8211aa11/mzlion-core-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

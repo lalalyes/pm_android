@@ -46,7 +46,7 @@
 
                 android:layout_height="0dp"
 
-                android:layout_weight="1.5"
+                android:layout_weight="1"
 
                 android:gravity="center"
 
@@ -66,10 +66,9 @@
 
                 android:background="@android:color/darker_gray" />
 
-
             <TextView
 
-                android:id="@+id/pj_venue"
+                android:id="@+id/pj_capacity"
 
                 android:layout_width="match_parent"
 
@@ -84,11 +83,27 @@
                 android:text="6"
 
                 android:textColor="@color/design_default_color_on_secondary" />
+            <TextView
+
+                android:id="@+id/pj_venue"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp"
+
+                android:layout_weight="2"
+
+                android:gravity="center"
+
+                android:padding="5dp"
+
+                android:text="6"
+
+                android:textColor="@color/design_default_color_on_secondary" />
 
 
 
-
-
+            <!--
             <TextView
 
                 android:id="@+id/pj_start_time"
@@ -124,25 +139,9 @@
 
                 android:textColor="@color/design_default_color_on_secondary" />
 
+-->
 
 
-            <TextView
-
-                android:id="@+id/pj_capacity"
-
-                android:layout_width="match_parent"
-
-                android:layout_height="0dp"
-
-                android:layout_weight="1"
-
-                android:gravity="center"
-
-                android:padding="5dp"
-
-                android:text="6"
-
-                android:textColor="@color/design_default_color_on_secondary" />
 
 
         </LinearLayout>

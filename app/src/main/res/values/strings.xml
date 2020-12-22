@@ -20,7 +20,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_user">我的</string>
-    <string name="done_project">已完成</string>
-    <string name="all_project">所有活动</string>
+    <string name="applied_button">已报名</string>
+    <string name="to_apply_button">可报名</string>
     <string name="project_activity_title">活动界面</string>
+    <string name="comment_submit">提交评论</string>
+    <string name="check_in">签到</string>
+    <string name="apply">报名</string>
+    <string name="cancel_apply">取消报名</string>
 </resources>
