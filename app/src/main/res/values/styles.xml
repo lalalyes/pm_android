@@ -5,6 +5,59 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="action_search">@drawable/home_search</item>
+    </style>
+
+
+
+    <style name="BigBlurryBackground">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:alpha">0.6</item>
+
+    </style>
+
+    <style name="listItem.TextView.ListItemPrimaryTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="listItem.TextView.ListItemSecondaryTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="detailsTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="background">@color/light_gray</item>
+        <item name="fontWeight">20</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="userInfoTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontWeight">20</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="details.TextView.Heading" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="detailsContent">
+        <item name="android:layout_marginVertical">15dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="userInfoContent">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

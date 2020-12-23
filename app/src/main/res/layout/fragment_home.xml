@@ -6,17 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+
+    <!--    // todo-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="活动查询"
+                    android:scaleType="center"
+                    app:srcCompat="?attr/action_search" />
+
+                <EditText
+                    android:id="@+id/searchBoxText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:importantForAutofill="no"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:hint="查询活动"
+                    android:background="@null"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="搜索"
+                    android:id="@+id/searchBtn"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <Spinner
+            android:id="@+id/spinnerAlternateUrls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="18dp"
+            android:padding="18dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/text_size_micro"/>
+
+        <ScrollView
+            android:layout_below="@id/spinnerAlternateUrls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:columnWidth="400dp"
+                android:gravity="center"
+                android:horizontalSpacing="8dp"
+                android:numColumns="auto_fit"
+                android:paddingBottom="@dimen/list_vertical_padding"
+                android:paddingTop="@dimen/list_vertical_padding"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="8dp"
+                tools:listitem="@layout/activity_list_item" />
+        </ScrollView>
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            android:theme="?attr/actionBarTheme"-->
+<!--            app:title="最新活动"-->
+<!--            app:navigationIcon="?homeAsUpIndicator"-->
+<!--            android:id="@+id/toolbar"/>-->
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

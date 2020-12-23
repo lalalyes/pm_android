@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">project</string>
+    <string name="app_name">复旦校园活动平台</string>
     <!-- Strings related to login -->
     <string name="prompt_username">用户名</string>
     <string name="prompt_password">密码</string>
@@ -17,10 +17,29 @@
     <string name="go_to_register">没有账号？去注册</string>
     <string name="go_to_login">没有账号？去登录</string>
     <string name="title_activity_user">MainActivity</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">首页</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_user">我的</string>
     <string name="done_project">已完成</string>
     <string name="all_project">所有活动</string>
     <string name="project_activity_title">活动界面</string>
+    <string name="activity_details_title">项目详情</string>
+
+    <string name="participate_activity_details_fragment">报名参加</string>
+    
+    
+    
+    <string name="activity_name">activity_name</string>
+    <string name="activity_introduction">activity_introduction</string>
+    <string name="activity_picture">activity_picture</string>
+    <string name="activity_time">activity_time</string>
+    <string name="activity_signup_time">activity_signup_time</string>
+
+    <string name="activity_limit">activity_limit</string>
+    <string name="activity_venue">activity_venue</string>
+    <string name="activity_participate_num">participate_num</string>
+    <string name="activity_sponsor">sponsor</string>
+    <string name="activity_type">type</string>
+
+
 </resources>

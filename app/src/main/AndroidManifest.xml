@@ -21,6 +21,34 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".UserActivity" />
         </activity>
+
+        <activity
+            android:name=".ui.home.DetailsActivity"
+            android:label="@string/activity_details_title"
+            android:parentActivityName=".UserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.user.PasswordFormActivity"
+            android:label="修改密码"
+            android:parentActivityName=".UserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.user.MyInformationActivity"
+            android:label="个人简介"
+            android:parentActivityName=".UserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserActivity" />
+        </activity>
+
         <activity
             android:name=".UserActivity"
             android:label="@string/title_activity_user" />
@@ -33,9 +61,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.register.RegisterActivity"
             android:label="@string/app_name" />
+
     </application>
 
 </manifest>

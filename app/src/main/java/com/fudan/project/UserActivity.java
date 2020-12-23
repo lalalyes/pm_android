@@ -2,6 +2,7 @@ package com.fudan.project;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;

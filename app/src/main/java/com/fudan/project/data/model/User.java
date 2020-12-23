@@ -5,6 +5,14 @@ public class User {
     private int userId;
     private String avatar;
     private String introduction;
+
+    public String getWorkNumber() {
+        return workNumber;
+    }
+
+    private String workNumber;
+    public User(){}
+
     public User(String username, int userId, String avatar, String introduction) {
         this.avatar = avatar;
         this.introduction = introduction;

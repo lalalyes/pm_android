@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <com.fudan.project.MyImageView
+
+            android:layout_marginTop="50dp"
+            android:id="@+id/photo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/user" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTitle"
+            android:layout_below="@id/photo"
+            android:layout_marginTop="50dp"
+            style="@style/userInfoTitle"
+            android:text="用户名:   "/>
+        <TextView
+            style="@style/userInfoContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/photo"
+            android:layout_toRightOf="@id/nameTitle"
+            android:text="user name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workNumberTitle"
+            android:layout_marginTop="50dp"
+
+            style="@style/userInfoTitle"
+            android:layout_below="@id/nameTitle"
+            android:text="学工号:   "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/work_number"
+            android:layout_marginTop="50dp"
+
+            style="@style/userInfoContent"
+            android:layout_below="@id/nameTitle"
+            android:layout_toRightOf="@id/workNumberTitle"
+            android:text="work number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selfIntroTitle"
+
+            android:layout_marginTop="50dp"
+
+            style="@style/userInfoTitle"
+            android:layout_below="@+id/workNumberTitle"
+            android:text="个人简介:  "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/self_intro"
+            android:layout_marginTop="50dp"
+            style="@style/userInfoContent"
+            android:layout_below="@id/workNumberTitle"
+            android:layout_toRightOf="@id/selfIntroTitle"
+            android:text="self intro"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,153 +7,99 @@
     tools:context=".ui.user.UserFragment">
 
 
-    <com.fudan.project.MyImageView
-        android:id="@+id/avatar"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:contentDescription="@string/title_user"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
-
-    <TextView
-        android:id="@+id/text_user"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:singleLine="true"
-        app:layout_constraintVertical_bias="0.218" />
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:id="@+id/user_edit"
-        app:srcCompat="@drawable/ic_edit_24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-
-        app:layout_constraintStart_toStartOf="@id/text_user"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
-
-
-
-    <LinearLayout
-        android:id="@+id/all_list"
-        android:layout_width="409dp"
-        android:layout_height="227dp"
-        android:orientation="vertical"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:singleLine="true"
-        app:layout_constraintVertical_bias="0.45">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
         <TextView
+            android:id="@+id/userName"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-
-            android:background="@android:color/darker_gray"
-            android:singleLine="true"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/icon"
+            android:elegantTextHeight="true"
+            android:text="欢迎 ！！！ 用户： userName"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            />
-        <LinearLayout
+            android:textColorHighlight="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <ImageView
+            android:id="@id/icon"
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gpodder_icon" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/icon"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtvTitle1"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
 
-            <LinearLayout
-                android:layout_width="49dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:text="个人账户管理"
+            />
 
-                <ImageView
 
-                    android:layout_width="35dp"
-                    android:layout_height="33dp"
+        <Button
+            android:id="@+id/myInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvTitle1"
+            android:layout_marginTop="10dp"
+            android:text="我的信息"/>
 
-                    app:srcCompat="@mipmap/fudan" />
-            </LinearLayout>
+        <Button
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myInformation"
+            android:layout_marginTop="10dp"
+            android:text="修改密码"/>
 
-            <Button
-                android:id="@+id/done_button"
-                style="@style/Widget.AppCompat.Button"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_width="144dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:text="@string/done_project" />
-        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout"
+            android:layout_below="@id/changePassword"
+            android:layout_marginTop="10dp"
+            android:text="用户登出"
+            />
 
         <TextView
-
+            android:id="@+id/txtvTitle2"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logout"
+            android:layout_marginTop="10dp"
+            android:text="我的应用设置"/>
 
-            android:layout_height="1dp"
-
-            android:background="?attr/colorControlHighlight" />
-        <LinearLayout
+        <Button
+            android:id="@+id/connect"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="49dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvTitle2"
+            android:layout_marginTop="10dp"
+            android:text="联系我们"/>
 
-                <ImageView
-
-                    android:layout_width="35dp"
-                    android:layout_height="33dp"
-
-                    app:srcCompat="@mipmap/fudan" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/all_button"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="144dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:text="@string/all_project" />
-        </LinearLayout>
-
-        <TextView
+        <Button
+            android:id="@+id/about"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-
-            android:background="@android:color/darker_gray"
-            android:singleLine="true"
-            android:textAlignment="center"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-
-            />
-    </LinearLayout>
-
-
-
-
-
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect"
+            android:layout_marginTop="10dp"
+            android:text="关于我们"/>
+    </RelativeLayout>
+</ScrollView>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

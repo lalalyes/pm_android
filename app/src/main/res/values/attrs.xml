@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="action_search" format="reference"/>
+    <declare-styleable name="SquareImageView">
+        <attr name="direction" format="enum">
+            <enum name="width" value="0"/>
+            <enum name="height" value="1"/>
+            <enum name="minimum" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
