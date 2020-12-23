@@ -3,13 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-
-    <!-- tools:context=".MainActivity" -->
-
-
-
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -20,18 +14,18 @@
 
 
         <LinearLayout
-            android:layout_width="136dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
 
 
-<!--            <com.fudan.project.MyImageView-->
-<!--                android:id="@+id/imageView"-->
-<!--                android:layout_width="78dp"-->
-<!--                android:layout_height="69dp"-->
-<!--                app:srcCompat="@mipmap/fudan"-->
-<!--                 />-->
+            <!--            <com.fudan.project.MyImageView-->
+            <!--                android:id="@+id/imageView"-->
+            <!--                android:layout_width="78dp"-->
+            <!--                android:layout_height="69dp"-->
+            <!--                app:srcCompat="@mipmap/fudan"-->
+            <!--                 />-->
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="78dp"
@@ -41,19 +35,17 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="265dp"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
 
-                android:id="@+id/pj_activity_name"
+                android:id="@+id/user_name"
 
                 android:layout_width="match_parent"
 
-                android:layout_height="0dp"
-
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
 
                 android:gravity="center"
 
@@ -75,13 +67,11 @@
 
             <TextView
 
-                android:id="@+id/pj_capacity"
+                android:id="@+id/user_score"
 
                 android:layout_width="match_parent"
 
-                android:layout_height="0dp"
-
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
 
                 android:gravity="center"
 
@@ -92,13 +82,11 @@
                 android:textColor="@color/design_default_color_on_secondary" />
             <TextView
 
-                android:id="@+id/pj_venue"
+                android:id="@+id/user_comment"
 
                 android:layout_width="match_parent"
 
-                android:layout_height="0dp"
-
-                android:layout_weight="2"
+                android:layout_height="wrap_content"
 
                 android:gravity="center"
 
@@ -107,47 +95,6 @@
                 android:text="6"
 
                 android:textColor="@color/design_default_color_on_secondary" />
-
-
-
-            <!--
-            <TextView
-
-                android:id="@+id/pj_start_time"
-
-                android:layout_width="match_parent"
-
-                android:layout_height="0dp"
-
-                android:layout_weight="1"
-
-                android:gravity="center"
-
-                android:padding="5dp"
-
-                android:text="6"
-
-                android:textColor="@color/design_default_color_on_secondary" />
-            <TextView
-
-                android:id="@+id/pj_end_time"
-
-                android:layout_width="match_parent"
-
-                android:layout_height="0dp"
-
-                android:layout_weight="1"
-
-                android:gravity="center"
-
-                android:padding="5dp"
-
-                android:text="6"
-
-                android:textColor="@color/design_default_color_on_secondary" />
-
--->
-
 
 
 
@@ -163,6 +110,7 @@
         android:layout_height="5dp"
 
         android:background="@android:color/darker_gray" />
+
 
 
 </LinearLayout>

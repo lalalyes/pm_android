@@ -218,6 +218,13 @@
 
             android:background="@android:color/darker_gray" />
 
+
+
+        <LinearLayout
+            android:id="@+id/comment_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
             <EditText
                 android:id="@+id/pj_comment"
                 android:layout_width="384dp"
@@ -258,7 +265,13 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/comment_submit" />
         </LinearLayout>
-
+        <LinearLayout
+            android:id="@+id/show_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
